@@ -1,0 +1,46 @@
+﻿@model Biblioteca.Models.User
+@{
+    ViewData["Title"] = "Login";
+}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width " />
+        <title>Login</title>
+    </head>
+    <body>
+    <div class="text-center">
+        <form asp-controller="Access" asp-action="Login" method="post">
+            <h1>Ingreso de usuario</h1>
+            <input type="text" placeholder="Email" asp-for="UserName" />
+            <input type="password"placeholder="Password" asp-for="UserPassword" />
+
+@*            <labe>
+                <input type="checkbox" asp-for="KeepLoggedIn"/>
+                Keep me Logged In
+            </labe>*@
+
+            <button type="submit">Login</button>
+
+            @if(ViewData["ValidateMessage"] != null)
+            {
+                <br />
+                <br />
+                <label>@ViewData["ValidateMessage"]</label>
+            }
+
+        </form>
+    </div>
+    <h1></h1>
+    <div class="row">
+        <div class="text-center">
+            <div class="img-box">
+                <img src="~/Recursos/inicio.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
+
+

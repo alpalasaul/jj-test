@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\inetpub\wwwroot\aspnet_client\system_web\Web</_PublishTargetUrl>
+    <History>False|2023-02-22T20:57:39.9699956Z;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>
